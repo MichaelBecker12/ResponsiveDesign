@@ -11,6 +11,9 @@ div {
   background-color: green;
 }
 
+.hula {
+  display: none;
+}
 
 nav {
   background-color: black;
@@ -23,11 +26,10 @@ nav {
 
 /* affects the drop down */
 .dropdown-box {
-  
+  display: none;
   width: 25%;
   background-color: lightgreen;
   box-shadow: 5px 15px 5px darkgreen;
-  margin-left: 25px;
 
 }
 
@@ -44,3 +46,40 @@ li:hover {
   background-color: grey;
 }
 
+nav:hover .dropdown-box {
+  display: block;
+  position: absolute;
+}
+
+/* Media */
+
+@media screen and (min-wdith:576px)
+{
+  .dropdown-box {
+
+    display: block;
+    width: 100%;
+    margin:0px;
+  }
+
+.fas {
+  display: none;
+}
+
+.hula {
+display: block;
+background-color: purple;
+
+}
+
+}
+
+
+@media screen and (min-width 768px) {
+ li {
+  display: inline-block;
+  
+ }
+
+ 
+}
